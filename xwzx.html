@@ -1,0 +1,576 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>阳泉市总工会</title>
+	<link rel="icon" href="images/picture.png" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/xwzx.css">
+	<!-- 引入样式 -->
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+	<title>新闻资讯</title>
+	<style>
+		.showmask2,.showmask1{
+			display: none;
+		}
+		.content,.xiala{
+			display: none;
+		}
+		.jwn_img{
+			width: 30%;
+			height: 170px;
+		}
+		.jwn_img img{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+<div id="newspage" v-cloak>
+		<div class="nav_box" >
+			<div class="nav1">
+				<div class="nav_left">
+					<a href="index.html"><img src="images/logo.png"></a>
+				</div>
+				<div class="tubiao">
+				   <p>{{nowTime}}</p>
+				   <p>{{nowDay}}</p>
+				</div>
+				<div class="nav_center clearfix">
+				   <div class="tianqi">
+				    <iframe width="350" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+				      src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"></iframe>
+				   </div>
+				</div>
+				<!--微信矩阵开始-->
+				<!--<div class="nav_right clearfix" >
+					&lt;!&ndash;网站集群&ndash;&gt;
+					<div class="juxing" id="showmask2">
+						<i class="icon iconfont icon-pingtai" style="margin-top: 10px"></i>
+						<p>网站集群</p>
+
+						<div class="top-arrow1"></div>
+						<div class="top-arrow1ccc"></div>
+					</div>
+					<div class="wechat-mask clearfix">
+						<div class="jq showmask1">
+							<div class="jq_list">
+								<ul class="clearfix">
+									<li><a href="">市</a></li>
+									<li><a href="">阳泉</a></li>
+								</ul>
+							</div>
+							<div class="jq_list">
+								<ul class="clearfix">
+									<li><a href="">区/县</a></li>
+									<li><a href="">阳泉城区</a></li>
+									<li><a href="">阳泉矿区</a></li>
+									<li><a href="">阳泉郊区</a></li>
+									<li><a href="">平定县</a></li>
+									<li><a href="">盂县</a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					&lt;!&ndash;微信矩阵&ndash;&gt;
+					<div class="juxing pic" id="showmask1" >
+						<i class="icon iconfont icon-weixin2" style="margin-top: 10px"></i>
+						<p>微信矩阵</p>
+						<div class="top-arrow2"></div>
+						<div class="top-arrow2ccc"></div>
+					</div>
+					<div class="wechat-mask clearfix">
+
+
+						<div class="jq showmask2">
+
+							<div class="jq_list">
+								<ul class="clearfix">
+									<li><a href="">市</a></li>
+									<li><a href="">阳泉</a></li>
+								</ul>
+							</div>
+							<div class="jq_list">
+								<ul class="clearfix">
+									<li><a href="">区/县</a></li>
+									<li><a href="">阳泉城区</a></li>
+									<li><a href="">阳泉矿区</a></li>
+									<li><a href="">阳泉郊区</a></li>
+									<li><a href="">平定县</a></li>
+									<li><a href="">盂县</a></li>
+								</ul>
+							</div>
+							<div class="jq_list">
+								<ul class="clearfix">
+									<li><a href="">产业工会</a></li>
+									<li><a href="">非公企业工会</a></li>
+									<li><a href="">财贸轻纺烟草工会</a></li>
+									<li><a href="">农林水工会</a></li>
+									<li><a href="">省煤炭工会</a></li>
+									<li><a href="">机冶建材工会</a></li>
+									<li><a href="">省直机关工会工委</a></li>
+									<li><a href="">省监狱工会</a></li>
+									<li><a href="">信息业工会</a></li>
+									<li><a href="">建筑业工会</a></li>
+									<li><a href="">直属基层工委</a></li>
+									<li><a href="">省公路运输工委</a></li>
+									<li><a href="">电业工会</a></li>
+									<li><a href="">教科文卫体工会</a></li>
+									<li><a href="">太铁工会</a></li>
+									<li><a href="">金融工委</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!--微信矩阵结束-->
+			</div>
+			<div class="list_online">
+				<div class="search clearfix">
+					
+					<input type="text" placeholder="请输入关键字" class="text searchText" id="ser-text" v-model="serKwords" autocomplete="off"/>
+					<input type="button" class="button serbutton" value="搜索" @click="goToSer('ssjg.html')" autocomplete="off"/>
+				</div>
+			</div>
+
+			<div class="list_box">
+			<div class="menu">
+				<ul class="clearfix">
+					<li >
+						<a href="index.html">
+							<i class="icon iconfont icon-shouye"></i>首页
+						</a>
+					</li>
+					<li class="tissue-jg">
+						<a href="zzjg.html">
+							<i class="icon iconfont icon-zuzhijigou1"></i>组织机构
+						</a>
+					</li>
+					<li class="news-zx active">
+						<a href="javascript:;">
+							<i class="icon iconfont icon-xinwen2"></i>新闻资讯
+						</a>
+					</li>
+					<li>
+						<a href="zg_index.html">
+							<i class="icon iconfont icon-daohangtubiao_fuwudating"></i>服务大厅
+						</a>
+					</li>
+					<li>
+						<a href="ztzx.html">
+							<i class="icon iconfont icon-zhuanti"></i>专题中心
+						</a>
+					</li>
+					<li>
+						<a href="jnts.html">
+							<i class="icon iconfont icon-shu1"></i>技能提升
+						</a>
+					</li>
+					<li>
+						<a href="data.html">
+							<i class="icon iconfont icon-shuju"></i>数据中心
+						</a>
+					</li>
+					<li>
+						<a href="zlzx.html">
+							<i class="icon iconfont icon-ziliao"></i>资料中心
+						</a>
+					</li>
+				</ul>
+			</div>
+				<!--组织机构-->
+				<!--<div class="xiala">
+					<div class="xiala_left">
+						<ul>
+							<li><a href="javascript:;">市总简介</a></li>
+							<li><a href="javascript:;">市总领导</a></li>
+							<li class="active1"><a href="javascript:;">内设机构</a></li>
+						</ul>
+					</div>
+					<div class="xiala_right">
+						<div class="xiala_list">
+							<ul class="clearfix">
+								<li><a href="javascript:;">市总部门：</a></li>
+								<li><a href="javascript:;">市总部门：</a></li>
+							    <li v-for="item in jigouDown"><a href="javascript:;">{{item.alwaysDepartmentName}}</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>-->
+			<div class="my_ghtitleleft" style="float: none;margin-left: 2%">
+				<i class="icon iconfont icon-shouye"></i>
+				<a href="index.html">当前位置：首页></a>
+				<span>{{inPosition}}</span>
+			</div>
+
+				<div class="my_ghcontent clearfix">
+					<div class="my_ghcontentleft" style="box-shadow: 1px 1px 4px rgba(0,0,0,0.26);margin-left: 2%">
+						<div class="rh_title">
+							<a href="##"><h4>新闻资讯</h4></a>
+						</div>
+						<div class="rh_list" >
+							<ul>
+								<li v-for="(item,name) in newsList" @click="showRightMsg(item.categoryId)">
+									<p>{{item.categoryName}}</p>
+									<i class="icon iconfont icon-jiaobiao"></i>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="toggWrap clearfix" style="margin-left: 0">
+						<div class="my_ghcontentright"  style="margin-left: 20px" >
+							<div class="jwn_box clearfix" v-for="(news,name) in newsRightList"  @click="sendId(news.contentId)" style="cursor: pointer;">
+								<div class="jwn_img">
+									<!-- <img :src="news.thumb"> -->
+									<img v-if="news.thumb != '' " :src="news.thumb"/>
+
+									
+									<img v-else-if="news.thumb == null " src="images/noPic.png"/>
+									<img v-else="news.thumb == '' " src="images/noPic.png"/>
+								</div>
+								<div class="jwn_text clearfix">
+									<h4><a href="##">{{news.title}}</a></h4>
+									<p>
+										{{news.description}}
+									</p>
+									<span>发布时间：{{news.inputdate}}</span>
+									<i>发布者：{{news.author}}</i>
+								</div>
+							</div>
+							<!--分页器-->
+							<div class="jwn_list">
+								<div class="block">
+									<el-pagination
+											@current-change="handleCurrentChange"
+											:current-page.sync="currentPage3"
+											:page-size="100"
+											layout="prev, pager, next, jumper"
+											:total=total>
+									</el-pagination>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!--底部-->
+	<div id="footer"></div>
+		<!--右侧功能栏-->
+		<div class="slide">
+			<ul>
+				<li class="open-hyzx">
+					<i class="icon iconfont icon-member" style="margin-top: 10px"></i>
+					<a>{{membercenter}}</a>
+				</li>
+				<li>
+					<i class="icon iconfont icon-xiaoxi" style="margin-top: 10px"></i><a href="##">消息通知</a>
+					<div class="tz-bage">
+						<span class="bage">10</span>
+					</div>
+				</li>
+				<li class="kefu"><i class="icon iconfont icon-kefu1 " style="margin-top: 10px"></i><a href="##">智能客服</a></li>
+				<li><i class="icon iconfont icon-xinlang" style="margin-top: 10px"></i><a href="##">微博</a></li>
+				<li><i class="icon iconfont icon-weixin2" style="margin-top: 10px"></i><a href="##">微信</a></li>
+				<li><i class="icon iconfont icon-APP" style="margin-top: 10px"></i><a href="##">APP</a></li>
+				<li id="top"><i class="icon iconfont icon-fanhuidingbu-" style="margin-top: 10px"></i><a href="##">TOP</a></li>
+			</ul>
+			<div class="sina">
+				<a href="">
+					<img src="images/sina.png" width="100px" height="100px">
+				</a>
+				<p>新浪微博二维码</p>
+			</div>
+			<div class="ewm">
+				<a href="">
+					<img src="images/erweima.jpg" width="100px" height="100px">
+				</a>
+				<p>工会微信公众号</p>
+			</div>
+			<div class="exit">
+				<img :src="userHeaderPic" width="80px" height="80px" onclick="window.open('hyzx.html')"/>
+				<p class="phoneUser">{{userPhone}}</p>
+				<button @click="clear()">退出</button>
+			</div>
+			<div class="appDoload">
+				<div class="ang">
+					<p>App下载</p>
+					<img src="images/android.jpg" alt="App下载">
+				</div>
+			</div>
+		</div>
+			<!--智能客服-->
+		<div class="customer-service" >
+		<div class="kf_box">
+			<div class="kf clearfix">
+				<div class="kf_left">
+					<a href=""><img src="images/gh_x.png" width="23px" height="23px"></a>
+					<span>工会智能小K</span>
+				</div>
+				<div class="kf_right">
+					<i class="icon iconfont icon-xiajiantou"></i>
+				</div>
+			</div>
+		</div>
+		<div class="chat_box">
+			<div id="chat" class="chat clearfix">
+				<div class="chat_left">
+					<a href=""><img src="images/gh_l.png" style="margin-bottom: 5px;"></a>
+					<span>客服</span>
+					<!--<i>2019-3-22  12:12</i>-->
+					<p>我是阳泉工会智能机器人，请问您有什么需要吗？</p>
+				</div>
+
+
+
+			</div>
+			<div class="down"></div>
+			<div class="shuru">
+				<input type="text" placeholder="请输入文字..."  v-model="userinp" autocomplete="off"/>
+			</div>
+			<div class="send clearfix">
+				<div class="send_left">
+					<i class="icon iconfont icon-smiling" ></i>
+				</div>
+				<div class="send_right">
+					<button type="button" @click="sendModel">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+
+
+        addactive('.list_online .list ul li','active');
+        addactive('.menu ul li','mu1');
+
+        $(".rh_list ul li:first-child").addClass("active");
+        $(".rh_list ul li").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+        var r = window.location.search;
+        r = r.substring(1);
+        if(r==2){
+            $('.my_ghcontentright').addClass('on');
+            $('.rh_list ul li:nth-child(1)').removeClass('active');
+            $('.rh_list ul li:nth-child(2)').addClass('active');
+        }
+
+    })
+</script>
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+<script src="js/usertoken.js"></script>
+<!-- 引入组件库 -->
+<script src="elementUi/js/index.js"></script>
+<script>
+
+ var vm =  new Vue({
+        el: "#newspage",
+        data: {
+			newsList:[],
+            newsRightList:[],
+            userinp:'',
+            userPhone:'',
+            membercenter:'',
+            pageItemId:'',
+            pageContentId:'',
+            nowTime:'',
+   			nowDay:'',
+            userHeaderPic:'',
+			serKwords:'',
+            visible: false,
+
+            currentPage3: 1,
+			total:'',
+            newsId:'',
+			newsPageId:306,
+            inPosition:''
+
+
+		},
+        methods: {
+			getNewsleftList(){
+                const that = this;
+                $.ajax({
+                    url: baseUrl + "/api/category/list",
+                    data:{
+                        parentId:"290",
+                        
+                    },
+                    async: false,
+                    dataType:"json",
+                    success:  function (result) {
+                        that.newsList = result.data;
+                        console.log(that.newsList)
+
+                    }
+                })
+		 	 },
+            sendId(id){
+                      console.log(id)
+                        window.location.href=('xw_xq.html' + '?'+id)
+            },
+            goToSer(path){
+				const that=this
+				console.log(that.serKwords)
+				window.open(path,'_self')
+				localStorage.setItem("keywords",that.serKwords)
+            },
+			showRightMsg(id){
+                 const that = this;
+                that.newsPageId = id;
+                if(that.newsPageId == 297 ){
+					that.inPosition = '工会新闻'
+				}else if(that.newsPageId == 306){
+                    that.inPosition = '通知公告'
+				}
+
+                $.ajax({
+                     url: baseUrl + "/api/content/list",
+                     data:{
+                         "categoryId" : that.newsPageId,
+                         "num" : "1",
+                         "pageSize" : "10"
+                     },
+                     dataType:"json",
+                     success:  function (result) {
+                         that.newsRightList = result.data.list;
+
+
+
+                     }
+                 })
+			},
+            sendModel(){
+                kfhuifu();
+			},
+            handleCurrentChange(val) {
+
+                var that = this;
+                $.ajax({
+                    url: baseUrl + "/api/content/list",
+                    data:{
+                        "categoryId" : that.newsPageId,
+                        "num" : val,
+                        "pageSize" : "10"
+
+                    },
+                    dataType:"json",
+                    success:  function (result) {
+                        console.log(result);
+                        console.log(that.newsPageId)
+                        that.newsRightList = result.data.list;
+
+
+                    }
+                });
+            }
+
+
+        
+  		},
+	  	mounted(){
+            const that = this;
+			//新闻页 左侧列表
+            that.getNewsleftList();
+            that.nowTime = nowTimeDay;
+            getDay();
+            that.nowDay = nowDay;
+            var tId = window.location.search;
+			d = tId.substring(1);
+
+			that.newsId = 306;
+
+			if(d == 2){
+                that.newsId = 297
+			}
+
+            if(that.newsId == 297 ){
+                that.inPosition = '工会新闻'
+            }else if(that.newsId == 306){
+                that.inPosition = '通知公告'
+            }
+            //默认显示聚焦热点右侧的数据   297工会新闻   306通知公告
+            $.ajax({
+                url: baseUrl + "/api/content/list",
+                data:{
+                    "categoryId" : that.newsId,
+                    "num" : "1",
+                    "pageSize" : "10"
+
+                },
+                dataType:"json",
+                success:  function (result) {
+                    console.log(result);
+                    that.newsRightList = result.data.list;
+                    that.total = Math.ceil(result.data.total * 10);
+
+
+                }
+            });
+
+          //实名制查询   显示用户头像 名字
+             
+              if(userTok.token != null){
+                   $.ajax({
+                        type: 'post',
+                        url: unionUrl + "/passLaborweb/api/laborun/realnameRecord/queryRealnameRecord",
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                        "token": userTok.token
+                    }),
+                    async: false,
+                    success: function (result) {
+                    console.log(result);
+
+                    if (result.data.total == 1) {
+                        //用户头像
+                        that.userHeaderPic = result.data.content[0].portraitPic;
+                        console.log('已经实名制')
+                    } else if (result.data.total == 0) {
+                        that.userHeaderPic = 'images/user.png'; //默认头像
+                        console.log('您还未实名制')
+                    } else {
+                        that.userHeaderPic = 'images/user.png'; //默认头像
+                        console.log('您还未实名制')
+                    }
+
+
+                     }
+
+                   })
+              }
+
+
+
+
+			
+        }
+    })
+
+
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+</body>
+</html>

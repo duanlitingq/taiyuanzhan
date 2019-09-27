@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>阳泉市总工会</title>
+	<link rel="icon" href="images/picture.png" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/pagecss/zxf_page.css">
+	<link rel="stylesheet" href="css/xwzx.css">
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+	<title>法律法规政策</title>
+	<style>
+		.showmask2,.showmask1{
+			display: none;
+		}
+		.content,.xiala{
+			display: none;
+		}
+		.jwn_img{
+			width: 258px;
+			height: 170px;
+		}
+		.toggWrap{
+			width: 93%;
+		}
+		.jwn_img img{
+			width: 100%;
+			height: 100%;
+		}
+		.jwn_text{
+			width: 95%;
+			border-bottom: 1px dashed #dfdfdf;
+		}
+		.jwn_text h4{
+			float: left;
+			display: contents;
+			font-weight: normal;
+		}
+		.jwn_text span{
+			float: right;
+			margin-top: 0;
+			/*font-weight: bold;*/
+			font-weight: 16px;
+			/*color: #000;*/
+		}
+		.jwn_box{
+			height: 40px;
+			line-height: 40px;
+			margin-bottom: 0;
+		}
+		.jwn_box:hover{
+			color: #db2c28;
+		}
+		.jwn_box:hover span{
+			color: #db2c28;
+		}
+		.list_box{
+			background: rgba(255,255,255,0.94);
+		}
+	</style>
+</head>
+<body>
+<div id="newspage" v-cloak>
+		<div class="nav_box" >
+			<div class="nav1">
+				<div class="nav_left">
+					<a href="index.html"><img src="images/logo.png"></a>
+				</div>
+				<div class="tubiao">
+				   <p>{{nowTime}}</p>
+				   <p>{{nowDay}}</p>
+				</div>
+				<div class="nav_center clearfix">
+				   <div class="tianqi">
+				    <iframe width="350" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+				      src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"></iframe>
+				   </div>
+				</div>
+				<!--&lt;!&ndash;微信矩阵开始&ndash;&gt;-->
+				<!--<div class="nav_right clearfix" >-->
+					<!--&lt;!&ndash;网站集群&ndash;&gt;-->
+					<!--<div class="juxing" id="showmask2">-->
+						<!--<i class="icon iconfont icon-pingtai" style="margin-top: 10px"></i>-->
+						<!--<p>网站集群</p>-->
+
+						<!--<div class="top-arrow1"></div>-->
+						<!--<div class="top-arrow1ccc"></div>-->
+					<!--</div>-->
+					<!--<div class="wechat-mask clearfix">-->
+						<!--<div class="jq showmask1">-->
+							<!--<div class="jq_list">-->
+								<!--<ul class="clearfix">-->
+									<!--<li><a href="">市</a></li>-->
+									<!--<li><a href="">阳泉</a></li>-->
+								<!--</ul>-->
+							<!--</div>-->
+							<!--<div class="jq_list">-->
+								<!--<ul class="clearfix">-->
+									<!--<li><a href="">区/县</a></li>-->
+									<!--<li><a href="">阳泉城区</a></li>-->
+									<!--<li><a href="">阳泉矿区</a></li>-->
+									<!--<li><a href="">阳泉郊区</a></li>-->
+									<!--<li><a href="">平定县</a></li>-->
+									<!--<li><a href="">盂县</a></li>-->
+								<!--</ul>-->
+							<!--</div>-->
+
+						<!--</div>-->
+					<!--</div>-->
+					<!--&lt;!&ndash;微信矩阵&ndash;&gt;-->
+					<!--<div class="juxing pic" id="showmask1" >-->
+						<!--<i class="icon iconfont icon-weixin2" style="margin-top: 10px"></i>-->
+						<!--<p>微信矩阵</p>-->
+						<!--<div class="top-arrow2"></div>-->
+						<!--<div class="top-arrow2ccc"></div>-->
+					<!--</div>-->
+					<!--<div class="wechat-mask clearfix">-->
+
+
+						<!--<div class="jq showmask2">-->
+
+							<!--<div class="jq_list">-->
+								<!--<ul class="clearfix">-->
+									<!--<li><a href="">市</a></li>-->
+									<!--<li><a href="">阳泉</a></li>-->
+								<!--</ul>-->
+							<!--</div>-->
+							<!--<div class="jq_list">-->
+								<!--<ul class="clearfix">-->
+									<!--<li><a href="">区/县</a></li>-->
+									<!--<li><a href="">阳泉城区</a></li>-->
+									<!--<li><a href="">阳泉矿区</a></li>-->
+									<!--<li><a href="">阳泉郊区</a></li>-->
+									<!--<li><a href="">平定县</a></li>-->
+									<!--<li><a href="">盂县</a></li>-->
+								<!--</ul>-->
+							<!--</div>-->
+							<!--<div class="jq_list">-->
+								<!--<ul class="clearfix">-->
+									<!--<li><a href="">产业工会</a></li>-->
+									<!--<li><a href="">非公企业工会</a></li>-->
+									<!--<li><a href="">财贸轻纺烟草工会</a></li>-->
+									<!--<li><a href="">农林水工会</a></li>-->
+									<!--<li><a href="">省煤炭工会</a></li>-->
+									<!--<li><a href="">机冶建材工会</a></li>-->
+									<!--<li><a href="">省直机关工会工委</a></li>-->
+									<!--<li><a href="">省监狱工会</a></li>-->
+									<!--<li><a href="">信息业工会</a></li>-->
+									<!--<li><a href="">建筑业工会</a></li>-->
+									<!--<li><a href="">直属基层工委</a></li>-->
+									<!--<li><a href="">省公路运输工委</a></li>-->
+									<!--<li><a href="">电业工会</a></li>-->
+									<!--<li><a href="">教科文卫体工会</a></li>-->
+									<!--<li><a href="">太铁工会</a></li>-->
+									<!--<li><a href="">金融工委</a></li>-->
+								<!--</ul>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--&lt;!&ndash;微信矩阵结束&ndash;&gt;-->
+
+
+
+			</div>
+			<div class="list_online">
+				<div class="search clearfix">
+					
+					<input type="text" placeholder="请输入关键字" class="text searchText"  v-model="serKwords" autocomplete="off"/>
+					<input type="button" class="button serbutton" value="搜索" @click="goToSer('ssjg.html')" autocomplete="off"/>
+				</div>
+			</div>
+
+			<div class="list_box">
+			<div class="menu">
+				
+			</div>
+				
+			<div class="my_ghtitleleft" style="float: none;padding-top: 17px;padding-left: 14px;">
+				<i class="icon iconfont icon-shouye"></i>
+				<a href="index.html">当前位置：首页></a>
+				<span>法律法规政策</span>
+			</div>
+
+				<div class="my_ghcontent clearfix">
+					
+					<div class="toggWrap clearfix">
+						<div class="my_ghcontentright"  style="margin-left: 20px" >
+							<div class="jwn_box clearfix" v-for="(news,name) in newsRightList"  @click="sendId(news.contentId)" style="cursor: pointer;">
+								
+								<div class="jwn_text clearfix">
+									<h4>{{news.title}}</h4>
+									<!-- <p>
+										{{news.description}}
+									</p> -->
+									<span>发布时间：{{news.inputdate}}</span>
+									<!-- <i>发布者：{{news.author}}</i> -->
+								</div>
+							</div>
+							<!--分页器-->
+							<div class="jwn_list">
+								<div class="zxf_pagediv"></div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!--底部-->
+	<div id="footer"></div>
+		<!--右侧功能栏-->
+		<div class="slide">
+			<ul>
+				<li class="open-hyzx">
+					<i class="icon iconfont icon-member" style="margin-top: 10px"></i>
+					<a>{{membercenter}}</a>
+				</li>
+				<li>
+					<i class="icon iconfont icon-xiaoxi" style="margin-top: 10px"></i><a href="##">消息通知</a>
+					<div class="tz-bage">
+						<span class="bage">10</span>
+					</div>
+				</li>
+				<li class="kefu"><i class="icon iconfont icon-kefu1 " style="margin-top: 10px"></i><a href="##">智能客服</a></li>
+				<li><i class="icon iconfont icon-xinlang" style="margin-top: 10px"></i><a href="##">微博</a></li>
+				<li><i class="icon iconfont icon-weixin2" style="margin-top: 10px"></i><a href="##">微信</a></li>
+				<li><i class="icon iconfont icon-APP" style="margin-top: 10px"></i><a href="##">APP</a></li>
+				<li id="top"><i class="icon iconfont icon-fanhuidingbu-" style="margin-top: 10px"></i><a href="##">TOP</a></li>
+			</ul>
+			<div class="sina">
+				<a href="">
+					<img src="images/sina.png" width="100px" height="100px">
+				</a>
+				<p>新浪微博二维码</p>
+			</div>
+			<div class="ewm">
+				<a href="">
+					<img src="images/erweima.jpg" width="100px" height="100px">
+				</a>
+				<p>工会微信公众号</p>
+			</div>
+			<div class="exit">
+				<img :src="userHeaderPic" width="80px" height="80px" onclick="window.open('hyzx.html')"/>
+				<p class="phoneUser">{{userPhone}}</p>
+				<button @click="clear()">退出</button>
+			</div>
+			<div class="appDoload">
+				<div class="ang">
+					<p>App下载</p>
+					<img src="images/android.jpg" alt="App下载">
+				</div>
+			</div>
+		</div>
+			<!--智能客服-->
+		<div class="customer-service" >
+		<div class="kf_box">
+			<div class="kf clearfix">
+				<div class="kf_left">
+					<a href=""><img src="images/gh_x.png" width="23px" height="23px"></a>
+					<span>工会智能小K</span>
+				</div>
+				<div class="kf_right">
+					<i class="icon iconfont icon-xiajiantou"></i>
+				</div>
+			</div>
+		</div>
+		<div class="chat_box">
+			<div id="chat" class="chat clearfix">
+				<div class="chat_left">
+					<a href=""><img src="images/gh_l.png" style="margin-bottom: 5px;"></a>
+					<span>客服</span>
+					<!--<i>2019-3-22  12:12</i>-->
+					<p>我是阳泉工会智能机器人，请问您有什么需要吗？</p>
+				</div>
+
+
+
+			</div>
+			<div class="down"></div>
+			<div class="shuru">
+				<input type="text" placeholder="请输入文字..."  v-model="userinp" autocomplete="off"/>
+			</div>
+			<div class="send clearfix">
+				<div class="send_left">
+					<i class="icon iconfont icon-smiling" ></i>
+				</div>
+				<div class="send_right">
+					<button type="button" @click="sendModel">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/zxf_page.js"></script>
+<script>
+    $(function () {
+
+		/*微信矩阵 网站集群显示隐藏 复制*/
+        $('#showmask1').mouseenter(function () {
+            $('.showmask2').show();
+            $('.top-arrow2').show()
+            $('.top-arrow2ccc').show()
+            $('.showmask1').hide()
+            $('.top-arrow1').hide()
+            $('.top-arrow1ccc').hide()
+        });
+        $('.showmask2').mouseleave(function () {
+            $('.showmask2').hide()
+            $('.top-arrow2').hide()
+            $('.top-arrow2ccc').hide()
+        });
+        $('#showmask2').mouseenter(function () {
+            $('.showmask1').show()
+            $('.top-arrow1').show()
+            $('.top-arrow1ccc').show()
+            $('.showmask2').hide()
+            $('.top-arrow2').hide()
+            $('.top-arrow2ccc').hide()
+        });
+        $('.showmask1').mouseleave(function () {
+            $('.showmask1').hide()
+            $('.top-arrow1').hide()
+            $('.top-arrow1ccc').hide()
+        });
+
+
+        $('.hideMask').mouseenter(function () {
+            $('.xiala').hide();
+            $('.content').hide()
+        })
+
+        
+
+        addactive('.list_online .list ul li','active');
+        addactive('.menu ul li','mu1');
+
+
+    })
+</script>
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+
+ var vm =  new Vue({
+        el: "#newspage",
+        data: {
+			// newsList:[],
+            newsRightList:[],
+            userinp:'',
+            userPhone:'',
+            membercenter:'',
+            pageItemId:'',
+            pageContentId:'',
+            nowTime:'',
+   			nowDay:'',
+            userHeaderPic:'',
+			serKwords:'',
+		},
+        methods: {
+			// getNewsleftList(){
+   //              const that = this;
+   //              $.ajax({
+   //                  url: baseUrl + "/api/category/list",
+   //                  data:{
+   //                      parentId:"389",
+                        
+   //                  },
+   //                  async: false,
+   //                  dataType:"json",
+   //                  success:  function (result) {
+   //                      that.newsList = result.data;
+   //                      console.log(that.newsList)
+
+   //                  }
+   //              })
+		 // 	 },
+            sendId(id){
+                      console.log(id)
+                        window.location.href=('xw_xq.html' + '?'+id)
+            },
+            goToSer(path){
+				const that=this
+				console.log(that.serKwords)
+				window.open(path,'_self')
+				localStorage.setItem("keywords",that.serKwords)
+            },
+			showRightMsg(id){
+                 const that = this;
+                 $.ajax({
+                     url: baseUrl + "/api/content/list",
+                     data:{
+                         "categoryId" : id,
+                         "num" : "1",
+                         "pageSize" : "10"
+                     },
+                     dataType:"json",
+                     success:  function (result) {
+                         that.newsRightList = result.data.list;
+                         console.log(that.newsRightList);
+                         console.log(result);
+						var pageSi =Math.ceil(result.data.total/10);
+
+                          $(".zxf_pagediv").createPage({
+                              pageNum: pageSi,
+                              current: 1,
+                              backfun: function(e) {
+                              that.pageContentId = e.current;
+                              $.ajax({
+                              url: baseUrl + "/api/content/list",
+                              data:{
+                                "categoryId" : id,
+                                "num" : that.pageContentId,
+                                "pageSize" : "10"
+                               },
+                               dataType:"json",
+                               success:  function (result) {
+                                  that.newsRightList = result.data.list;
+                                  console.log(that.pageContentId);
+
+
+                            }
+                        })
+
+
+                    }
+                });
+                     }
+                 })
+			},
+            sendModel(){
+                kfhuifu();
+			},
+            //搜索框下拉
+            serType(){
+                if(this.serTypeWrap == true){
+                    this.serTypeWrap =false
+                }else{
+                    this.serTypeWrap = true
+                }
+            },
+            sendSousuo(id,name){
+                var that = this;
+                that.serModel = name;
+                that.sousuoID = id;
+                console.log(that.serModel);
+                console.log(that.sousuoID);
+
+
+                that.serTypeWrap = false
+
+
+
+
+            }
+        
+  		},
+	  	mounted(){
+            const that = this;
+			//新闻页 左侧列表
+            // that.getNewsleftList();
+            that.nowTime = nowTimeDay;
+            getDay();
+            that.nowDay = nowDay;
+
+			//默认显示聚焦热点右侧的数据   297工会新闻   306通知公告
+            $.ajax({
+                url: baseUrl + "/api/content/list",
+                data:{
+                    "categoryId" : "398",
+                    "num" : "1",
+                    "pageSize" : "10"
+
+                },
+                dataType:"json",
+                success:  function (result) {
+                    that.newsRightList = result.data.list;
+                    console.log(that.newsRightList);
+                    var pageSi =Math.ceil(result.data.total/10)
+                   $(".zxf_pagediv").createPage({
+                      pageNum: pageSi,
+                      current: 1,
+                      backfun: function(e) {
+                         that.pageContentId = e.current;
+                         $.ajax({
+                            url: baseUrl + "/api/content/list",
+                            data:{
+                               "categoryId" : 398,
+                               "num" : that.pageContentId,
+                               "pageSize" : "10"
+                            },
+                            dataType:"json",
+                            success:  function (result) {
+                               that.newsRightList = result.data.list;
+                               console.log(that.pageContentId);
+
+
+                            }
+                         })
+
+
+                      }
+                   });
+
+
+
+
+
+                }
+            });
+
+          //实名制查询   显示用户头像 名字
+             
+              if(userTok.token != null){
+                   $.ajax({
+                        type: 'post',
+                        url: unionUrl + "/passLaborweb/api/laborun/realnameRecord/queryRealnameRecord",
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                        "token": userTok.token
+                    }),
+                    async: false,
+                    success: function (result) {
+                    console.log(result);
+
+                    if (result.data.total == 1) {
+                        //用户头像
+                        that.userHeaderPic = result.data.content[0].portraitPic;
+                        console.log('已经实名制')
+                    } else if (result.data.total == 0) {
+                        that.userHeaderPic = 'images/user.png'; //默认头像
+                        console.log('您还未实名制')
+                    } else {
+                        that.userHeaderPic = 'images/user.png'; //默认头像
+                        console.log('您还未实名制')
+                    }
+
+
+                     }
+
+                   })
+              }
+
+
+
+
+			
+        }
+    })
+
+
+</script>
+<!--智能客服-->
+<script src="js/znkf.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		$(".rh_list ul li:first-child").addClass("active");
+		$(".rh_list ul li").on("click",function(){
+		$(this).addClass("active").siblings().removeClass("active");
+	})
+		 var r = window.location.search;
+        r = r.substring(1);
+        if(r==2){
+        	$('.my_ghcontentright').addClass('on');
+        	$('.rh_list ul li:nth-child(1)').removeClass('active');
+        	$('.rh_list ul li:nth-child(2)').addClass('active');
+        }
+	})
+</script>
+</body>
+</html>

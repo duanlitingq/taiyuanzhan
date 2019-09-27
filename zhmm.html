@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="css/zhmm.css" />
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<!--全局样式-->
+	<link rel="stylesheet" href="css/style.css">
+	<title>阳泉市总工会</title>
+	<link rel="icon" href="images/picture.png" type="image/x-icon"/>
+	<style>
+		.showhd{
+			display: block !important;
+		}
+		.showmask2,.showmask1{
+			display: none;
+
+		}
+		.btnc{
+			display: block;
+			width: 125px;
+			height: 40px;
+			background: #db2c28;
+			border: none;
+			border-radius: 5px;
+			text-align: center;
+			font-size: 16px;
+			color: #fff;
+			margin-bottom: 20px;
+			margin-left: 15px;
+		}
+
+	</style>
+</head>
+<body>
+<div id="wrap" v-cloak>
+
+	<div class="nav1">
+		<div class="nav_left">
+			<a href="index.html"><img src="images/logo.png"></a>
+		</div>
+		<div class="nav_center clearfix">
+			<div class="tubiao">
+				<p>{{nowTime}}</p>
+				<p>{{nowDay}}</p>
+			</div>
+			<div class="tianqi">
+				<iframe width="350" scrolling="no" height="60" frameborder="0" allowtransparency="true"
+						src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"></iframe>
+			</div>
+		</div>
+		<!--&lt;!&ndash;微信矩阵开始&ndash;&gt;-->
+		<!--<div class="nav_right clearfix" >-->
+			<!--&lt;!&ndash;网站集群&ndash;&gt;-->
+			<!--<div class="juxing" id="showmask1">-->
+				<!--<i class="icon iconfont icon-pingtai"></i>-->
+				<!--<p>网站集群</p>-->
+
+				<!--<div class="top-arrow1"></div>-->
+				<!--<div class="top-arrow1ccc"></div>-->
+			<!--</div>-->
+			<!--<div class="wechat-mask clearfix">-->
+				<!--<div class="jq showmask1">-->
+					<!--<div class="jq_list">-->
+						<!--<ul class="clearfix">-->
+							<!--<li><a href="">市</a></li>-->
+							<!--<li><a href="">阳泉</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="jq_list">-->
+						<!--<ul class="clearfix">-->
+							<!--<li><a href="">区/县</a></li>-->
+							<!--<li><a href="">阳泉城区</a></li>-->
+							<!--<li><a href="">阳泉矿区</a></li>-->
+							<!--<li><a href="">阳泉郊区</a></li>-->
+							<!--<li><a href="">平定县</a></li>-->
+							<!--<li><a href="">盂县</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+
+				<!--</div>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;微信矩阵&ndash;&gt;-->
+			<!--<div class="juxing pic" id="showmask2" >-->
+				<!--<i class="icon iconfont icon-weixin2"></i>-->
+				<!--<p>微信矩阵</p>-->
+				<!--<div class="top-arrow2"></div>-->
+				<!--<div class="top-arrow2ccc"></div>-->
+			<!--</div>-->
+			<!--<div class="wechat-mask clearfix">-->
+
+
+				<!--<div class="jq showmask2">-->
+
+					<!--<div class="jq_list">-->
+						<!--<ul class="clearfix">-->
+							<!--<li><a href="">市</a></li>-->
+							<!--<li><a href="">阳泉</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="jq_list">-->
+						<!--<ul class="clearfix">-->
+							<!--<li><a href="">区/县</a></li>-->
+							<!--<li><a href="">阳泉城区</a></li>-->
+							<!--<li><a href="">阳泉矿区</a></li>-->
+							<!--<li><a href="">阳泉郊区</a></li>-->
+							<!--<li><a href="">平定县</a></li>-->
+							<!--<li><a href="">盂县</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="jq_list">-->
+						<!--<ul class="clearfix">-->
+							<!--<li><a href="">产业工会</a></li>-->
+							<!--<li><a href="">非公企业工会</a></li>-->
+							<!--<li><a href="">财贸轻纺烟草工会</a></li>-->
+							<!--<li><a href="">农林水工会</a></li>-->
+							<!--<li><a href="">省煤炭工会</a></li>-->
+							<!--<li><a href="">机冶建材工会</a></li>-->
+							<!--<li><a href="">省直机关工会工委</a></li>-->
+							<!--<li><a href="">省监狱工会</a></li>-->
+							<!--<li><a href="">信息业工会</a></li>-->
+							<!--<li><a href="">建筑业工会</a></li>-->
+							<!--<li><a href="">直属基层工委</a></li>-->
+							<!--<li><a href="">省公路运输工委</a></li>-->
+							<!--<li><a href="">电业工会</a></li>-->
+							<!--<li><a href="">教科文卫体工会</a></li>-->
+							<!--<li><a href="">太铁工会</a></li>-->
+							<!--<li><a href="">金融工委</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--&lt;!&ndash;微信矩阵结束&ndash;&gt;-->
+	</div>
+	<div class="dl_navbox">
+		<div class="dl_nav">
+			<ul class="clearfix">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="zzjg.html">组织机构</a></li>
+				<li><a href="xwzx.html">新闻资讯</a></li>
+				<li><a href="zg_index.html">服务大厅</a></li>
+				<li><a href="ztzx.html">专题中心</a></li>
+				<li><a href="jnts.html">技能提升</a></li>
+				<li><a href="data.html">数据中心</a></li>
+				<li><a href="zlzx.html">资料中心</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!--找回密码-->
+	<div class="zhmm_box findPassword">
+		<div class="zhmm">
+			<div class="zhmm_title clearfix">
+				<h4>找回密码</h4>
+				<a href="zhuce.html"> | 注册</a>
+				<a href="denglu.html">登录 </a>
+			</div>
+
+		</div>
+		<div class="zhmm-hide">
+
+			<div class="zhuyi">
+				<i class="icon iconfont icon-zhuyi"></i>
+				<span>请输入你需要找回登录密码的账户名 </span>
+			</div>
+			<div class="dl_xx">
+				<div class="dlm_text">
+					<span>登录名：</span>
+					<input type="text" name="mz" placeholder="请输入注册手机号"
+						   v-model="userLoginName"  onkeyup="this.value=this.value.replace(/\D/g,'')"
+						   onafterpaste="this.value=this.value.replace(/\D/g,'')" autocomplete="off"/>
+				</div>
+				<div class="yz_text clearfix">
+					<div class="yz_yzm">
+						<span>验证码：</span>
+						<input type="text" name="yzm" placeholder="请输入验证码"
+							   v-model="sixNumber" onkeyup="this.value=this.value.replace(/\D/g,'')"
+							   onafterpaste="this.value=this.value.replace(/\D/g,'')" autocomplete="off"/>
+					</div>
+					<div class="yz_btn">
+						<button  class="btnc"  @click="getCode">点击获取验证码</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--重置密码-->
+	<div class="zhmm_box resetPassword" >
+
+
+		<div class="dl_xx">
+			<div class="dlm_text">
+				<span>新密码：</span>
+				<input type="password" name="mz" placeholder="请输入新密码" v-model="newPassword" autocomplete="off"/>
+			</div>
+			<div class="dlm_text" style="margin-top: 30px;margin-left: -15px;">
+				<span>确认密码：</span>
+				<input type="password" name="mz" placeholder="请再次确认密码" v-model="isNewPassword" autocomplete="off"/>
+			</div>
+			<div class="dl_anniu">
+				<button class="btn btn-danger btn-lg" data-toggle="modal" @click="resultPassword" >
+				确认
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--模态框-->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		 aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" style="height: 100%; overflow: hidden">
+			<div class="modal-content" >
+				<div class="modal-header">
+
+					<div class="tishi_title clearfix">
+						<span>温馨提示</span>
+						<button type="button" class="close" @click="closeModal"
+								data-dismiss="modal" aria-hidden="true" style="font-size: 30px">
+							&times;
+						</button>
+					</div>
+			<div class="tishi">
+
+			<div class="tishi_box">
+				<div class="mm_cz">
+					<i class="icon iconfont icon-wancheng"></i>
+					<span>密码重置成功，请您重新登录</span>
+				</div>
+				<div class="dl_anniu1" style="margin-bottom: 55px;text-align: center;">
+					<button class="mLogin">立即登录</button>
+				</div>
+			</div>
+		</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!--底部-->
+	<div id="footer"></div>
+
+
+
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vue2.5.22.js"></script>
+<script src="js/axios.0.18.0.js"></script>
+<script src="js/qs.6.60.js"></script>
+<script src="js/usertoken.js"></script>
+<script>
+	var vm  = new Vue({
+		el:'#wrap',
+		data:{
+            userLoginName:'',
+			sixNumber:'',
+			newPassword:'',
+			isNewPassword:'',
+
+            nowTime:'',
+            nowDay:''
+
+		},
+		methods:{
+
+			//获取验证码
+            getCode(){
+                var that = this;
+                if(that.userLoginName.length != 11){
+                    $('#myModal').modal();
+                    $('.mm_cz>span').html("请输入11位手机号码");
+                    $(".dl_anniu1").hide();
+                    // alert('请输入11位手机号码')
+                }else if(!(/^1[34578]\d{9}$/.test(that.userLoginName))){
+                    $('#myModal').modal();
+                    $('.mm_cz>span').html("请输入正确的手机号码");
+                    $(".dl_anniu1").hide();
+
+                }else {
+
+                     times = 60
+                     timer = null;
+                    // 计时开始
+                    timer = setInterval(djs, 1000);
+                    function djs() {
+                        console.log('倒计时')
+
+                        if (times == 0) {
+                            $(".btnc").attr("disabled", false);
+                            $(".btnc").css('background','#fa7673');
+                            $(".btnc").html("重新获取");
+                            times = 60;
+                            clearInterval(timer);
+                        } else {
+                            $(".btnc").attr("disabled", true);
+                            $(".btnc").css('background','#fa7673');
+                            $(".btnc").html("重新获取" + "(" + times + ")");
+                            times--;
+                        }
+                    }
+
+                    $.ajax({
+                        type: 'POST',
+                        url: "http://ftu.dev.puluodike.cn/passLaborweb/api/laborun/api/sms/send",
+                        contentType: "application/json",
+
+                        data: JSON.stringify({
+                            "phone": that.userLoginName,
+                            "smsType": "2"
+                        }),
+                        dataType: "json",
+                        success: function (result) {
+                            console.log(result)
+                        }
+                    })
+
+                }
+
+			},
+            //重置密码
+            resultPassword(){
+                var that = this;
+
+                if(that.sixNumber = ''){
+                    $('#myModal').modal();
+                    $('.mm_cz span').html('验证码不能为空');
+                    $('.dl_anniu1').hide()
+				}else if(that.newPassword != that.isNewPassword){
+                    $('#myModal').modal();
+                    $('.mm_cz span').html('两次输入的密码不一致,请重新输入');
+                    $('.dl_anniu1').hide();
+					that.newPassword = '';
+					that.isNewPassword = ''
+				}else if(that.newPassword = ''){
+                    $('#myModal').modal();
+                    $('.mm_cz span').html('密码不能为空,请输入密码');
+                    $('.dl_anniu1').hide();
+
+                }else if(that.isNewPassword = ''){
+                    $('#myModal').modal();
+                    $('.mm_cz span').html('密码不能为空,请输入密码');
+                    $('.dl_anniu1').hide();
+
+                }else{
+                    $.ajax({
+                        type:'post',
+                        contentType: 'application/json',
+                        url: unionUrl + "/sso/ssoUser/updateUserPassByPhone",
+
+                        data:JSON.stringify({
+                            "phone":that.userLoginName,
+                            "password":that.isNewPassword
+                        }),
+                        async: false,
+                        dataType:"json",
+                        success:  function (result) {
+                            console.log(result);
+
+
+                            if(result.code == 0){
+                                $('#myModal').modal();
+                                $('.mm_cz span').html('密码重置成功,请重新登录');
+                            }else if(result.msg == "号码未注册"){
+                                $('#myModal').modal();
+                                $('.mm_cz span').html('您的号码未注册,请先注册');
+                                $('.dl_anniu1').hide()
+                            } else{
+                                $('#myModal').modal();
+                                $('.mm_cz span').html(result.msg);
+                                $('.dl_anniu1').hide()
+                            }
+
+                        }
+
+                    })
+				}
+
+
+
+            },
+			//关闭 输入框初始化
+            closeModal(){
+                var that = this;
+                that.userLoginName = '';
+                that.sixNumber = '';
+                that.newPassword = '';
+                that.isNewPassword = ''
+            },
+
+
+
+		},
+		mounted(){
+
+            this.nowTime = nowTimeDay;
+            getDay();
+            this.nowDay = nowDay;
+
+
+
+		}
+
+	})
+</script>
+
+<script>
+    $(function () {
+		/*微信矩阵 网站集群显示隐藏 复制*/
+        $('#showmask2').mouseenter(function () {
+            $('.showmask2').show();
+            $('.top-arrow2').show();
+            $('.top-arrow2ccc').show();
+            $('.showmask1').hide();
+            $('.top-arrow1').hide();
+            $('.top-arrow1ccc').hide()
+
+        });
+        $('.showmask2').mouseleave(function () {
+            $('.showmask2').hide();
+            $('.top-arrow2').hide();
+            $('.top-arrow2ccc').hide()
+        });
+        $('#showmask1').mouseenter(function () {
+            $('.showmask1').show();
+            $('.top-arrow1').show();
+            $('.top-arrow1ccc').show();
+            $('.showmask2').hide();
+            $('.top-arrow2').hide();
+            $('.top-arrow2ccc').hide()
+        });
+        $('.showmask1').mouseleave(function () {
+            $('.showmask1').hide();
+            $('.top-arrow1').hide();
+            $('.top-arrow1ccc').hide()
+        });
+
+        $('.mLogin').click(function () {
+            window.open('denglu.html','_self')
+        })
+    })
+</script>
+</html>
